@@ -6,7 +6,7 @@ This project demonstrates a **real-world implementation of a Public Key Infrastr
 
 The goal was to simulate how certificates are created, managed, and rotated in an enterprise environment.
 
----
+
 
 ##  Architecture
 
@@ -22,7 +22,7 @@ HTTPS Demo Server (Python)
 Azure Key Vault (secure storage & versioning)
 ```
 
----
+
 
 ##  Technologies Used
 
@@ -31,7 +31,7 @@ Azure Key Vault (secure storage & versioning)
 * Python (HTTPS demo server)
 * WSL (Linux environment on Windows)
 
----
+
 
 ##  Key Features
 
@@ -41,7 +41,7 @@ Azure Key Vault (secure storage & versioning)
 * Implemented certificate signing workflow
 * Managed CA database (`index.txt`, `serial`)
 
----
+
 
 ### 2. Certificate Lifecycle Management
 
@@ -49,7 +49,7 @@ Azure Key Vault (secure storage & versioning)
 * Built full certificate chain (Root → Intermediate → Server)
 * Demonstrated certificate renewal and rotation
 
----
+
 
 ### 3. HTTPS Demo Service
 
@@ -57,7 +57,7 @@ Azure Key Vault (secure storage & versioning)
 * Configured TLS with custom certificates
 * Debugged real-world TLS issues (SAN, trust chain)
 
----
+
 
 ### 4. Azure Key Vault Integration
 
@@ -66,9 +66,9 @@ Azure Key Vault (secure storage & versioning)
 * Implemented RBAC for secure access
 * Demonstrated certificate versioning (multiple versions under same name)
 
----
 
-## 🔄 Certificate Rotation Demo
+
+##  Certificate Rotation Demo
 
 * Created initial certificate (`v1`)
 * Imported into Key Vault
@@ -76,19 +76,9 @@ Azure Key Vault (secure storage & versioning)
 * Re-imported under the same name
 * Verified multiple versions in Key Vault
 
----
 
-## 🧠 Key Learnings
 
-* Importance of Subject Alternative Names (SAN)
-* Certificate chain validation and trust model
-* OpenSSL CA state management (`index.txt`)
-* Azure RBAC vs traditional access control
-* Practical certificate lifecycle challenges
-
----
-
-## 🚀 How to Run
+##  How to Run
 
 Start the HTTPS server:
 
@@ -104,7 +94,7 @@ https://localhost:4443
 
 
 
-## 📌 Future Improvements
+##  Future Improvements
 
 * mTLS (client certificate authentication)
 * Automated certificate rotation
