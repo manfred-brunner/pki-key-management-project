@@ -1,0 +1,7 @@
+*.key.pem
+*.pfx
+*.srl
+index.txt
+serial
+private/
+newcerts/
